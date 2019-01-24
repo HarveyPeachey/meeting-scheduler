@@ -36,6 +36,7 @@
             this.UserStory1 = new System.Windows.Forms.Button();
             this.UserStory2 = new System.Windows.Forms.Button();
             this.UserStory3 = new System.Windows.Forms.Button();
+            this.TestOutput = new System.Windows.Forms.TextBox();
             this.DateSelector.SuspendLayout();
             this.AdminBox.SuspendLayout();
             this.SuspendLayout();
@@ -49,7 +50,7 @@
             // DateSelector
             // 
             this.DateSelector.Controls.Add(this.CreateDateRange);
-            this.DateSelector.Location = new System.Drawing.Point(18, 339);
+            this.DateSelector.Location = new System.Drawing.Point(18, 397);
             this.DateSelector.Name = "DateSelector";
             this.DateSelector.Size = new System.Drawing.Size(402, 315);
             this.DateSelector.TabIndex = 1;
@@ -79,9 +80,9 @@
             this.AdminBox.Controls.Add(this.UserStory3);
             this.AdminBox.Controls.Add(this.UserStory2);
             this.AdminBox.Controls.Add(this.UserStory1);
-            this.AdminBox.Location = new System.Drawing.Point(432, 350);
+            this.AdminBox.Location = new System.Drawing.Point(432, 339);
             this.AdminBox.Name = "AdminBox";
-            this.AdminBox.Size = new System.Drawing.Size(373, 304);
+            this.AdminBox.Size = new System.Drawing.Size(373, 373);
             this.AdminBox.TabIndex = 3;
             this.AdminBox.TabStop = false;
             this.AdminBox.Text = "AdminBox";
@@ -113,9 +114,17 @@
             this.UserStory3.Text = "User Story 3";
             this.UserStory3.UseVisualStyleBackColor = true;
             // 
+            // TestOutput
+            // 
+            this.TestOutput.Location = new System.Drawing.Point(18, 339);
+            this.TestOutput.Name = "TestOutput";
+            this.TestOutput.Size = new System.Drawing.Size(402, 31);
+            this.TestOutput.TabIndex = 4;
+            // 
             // Form1
             // 
-            this.ClientSize = new System.Drawing.Size(823, 670);
+            this.ClientSize = new System.Drawing.Size(823, 724);
+            this.Controls.Add(this.TestOutput);
             this.Controls.Add(this.AdminBox);
             this.Controls.Add(this.NotificationBox);
             this.Controls.Add(this.DateSelector);
@@ -124,6 +133,7 @@
             this.DateSelector.ResumeLayout(false);
             this.AdminBox.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -137,6 +147,7 @@
         private System.Windows.Forms.Button UserStory3;
         private System.Windows.Forms.Button UserStory2;
         private System.Windows.Forms.Button UserStory1;
+        private System.Windows.Forms.TextBox TestOutput;
     }
 }
 
