@@ -42,23 +42,23 @@
             // 
             // Calendar1
             // 
-            this.Calendar1.Location = new System.Drawing.Point(18, 18);
+            this.Calendar1.Location = new System.Drawing.Point(18, 12);
             this.Calendar1.Name = "Calendar1";
             this.Calendar1.TabIndex = 0;
             // 
             // DateSelector
             // 
             this.DateSelector.Controls.Add(this.CreateDateRange);
-            this.DateSelector.Location = new System.Drawing.Point(432, 18);
+            this.DateSelector.Location = new System.Drawing.Point(18, 339);
             this.DateSelector.Name = "DateSelector";
-            this.DateSelector.Size = new System.Drawing.Size(559, 315);
+            this.DateSelector.Size = new System.Drawing.Size(402, 315);
             this.DateSelector.TabIndex = 1;
             this.DateSelector.TabStop = false;
             this.DateSelector.Text = "Date Selected";
             // 
             // CreateDateRange
             // 
-            this.CreateDateRange.Location = new System.Drawing.Point(334, 264);
+            this.CreateDateRange.Location = new System.Drawing.Point(177, 264);
             this.CreateDateRange.Name = "CreateDateRange";
             this.CreateDateRange.Size = new System.Drawing.Size(219, 45);
             this.CreateDateRange.TabIndex = 0;
@@ -67,7 +67,7 @@
             // 
             // NotificationBox
             // 
-            this.NotificationBox.Location = new System.Drawing.Point(997, 18);
+            this.NotificationBox.Location = new System.Drawing.Point(432, 12);
             this.NotificationBox.Name = "NotificationBox";
             this.NotificationBox.Size = new System.Drawing.Size(373, 315);
             this.NotificationBox.TabIndex = 2;
@@ -79,7 +79,7 @@
             this.AdminBox.Controls.Add(this.UserStory3);
             this.AdminBox.Controls.Add(this.UserStory2);
             this.AdminBox.Controls.Add(this.UserStory1);
-            this.AdminBox.Location = new System.Drawing.Point(997, 584);
+            this.AdminBox.Location = new System.Drawing.Point(432, 350);
             this.AdminBox.Name = "AdminBox";
             this.AdminBox.Size = new System.Drawing.Size(373, 304);
             this.AdminBox.TabIndex = 3;
@@ -115,7 +115,7 @@
             // 
             // Form1
             // 
-            this.ClientSize = new System.Drawing.Size(1382, 900);
+            this.ClientSize = new System.Drawing.Size(823, 670);
             this.Controls.Add(this.AdminBox);
             this.Controls.Add(this.NotificationBox);
             this.Controls.Add(this.DateSelector);
