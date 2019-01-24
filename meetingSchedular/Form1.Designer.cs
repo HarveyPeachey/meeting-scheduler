@@ -33,9 +33,9 @@
             this.CreateDateRange = new System.Windows.Forms.Button();
             this.NotificationBox = new System.Windows.Forms.GroupBox();
             this.AdminBox = new System.Windows.Forms.GroupBox();
-            this.UserStory1 = new System.Windows.Forms.Button();
-            this.UserStory2 = new System.Windows.Forms.Button();
             this.UserStory3 = new System.Windows.Forms.Button();
+            this.UserStory2 = new System.Windows.Forms.Button();
+            this.UserStory1 = new System.Windows.Forms.Button();
             this.TestOutput = new System.Windows.Forms.TextBox();
             this.DateSelector.SuspendLayout();
             this.AdminBox.SuspendLayout();
@@ -44,8 +44,10 @@
             // Calendar1
             // 
             this.Calendar1.Location = new System.Drawing.Point(18, 12);
+            this.Calendar1.MaxSelectionCount = 1;
             this.Calendar1.Name = "Calendar1";
             this.Calendar1.TabIndex = 0;
+            this.Calendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.Calendar1_DateChanged);
             // 
             // DateSelector
             // 
@@ -87,14 +89,14 @@
             this.AdminBox.TabStop = false;
             this.AdminBox.Text = "AdminBox";
             // 
-            // UserStory1
+            // UserStory3
             // 
-            this.UserStory1.Location = new System.Drawing.Point(6, 63);
-            this.UserStory1.Name = "UserStory1";
-            this.UserStory1.Size = new System.Drawing.Size(361, 48);
-            this.UserStory1.TabIndex = 0;
-            this.UserStory1.Text = "User Story 1";
-            this.UserStory1.UseVisualStyleBackColor = true;
+            this.UserStory3.Location = new System.Drawing.Point(6, 176);
+            this.UserStory3.Name = "UserStory3";
+            this.UserStory3.Size = new System.Drawing.Size(361, 53);
+            this.UserStory3.TabIndex = 2;
+            this.UserStory3.Text = "User Story 3";
+            this.UserStory3.UseVisualStyleBackColor = true;
             // 
             // UserStory2
             // 
@@ -105,20 +107,20 @@
             this.UserStory2.Text = "User Story 2";
             this.UserStory2.UseVisualStyleBackColor = true;
             // 
-            // UserStory3
+            // UserStory1
             // 
-            this.UserStory3.Location = new System.Drawing.Point(6, 176);
-            this.UserStory3.Name = "UserStory3";
-            this.UserStory3.Size = new System.Drawing.Size(361, 53);
-            this.UserStory3.TabIndex = 2;
-            this.UserStory3.Text = "User Story 3";
-            this.UserStory3.UseVisualStyleBackColor = true;
+            this.UserStory1.Location = new System.Drawing.Point(6, 63);
+            this.UserStory1.Name = "UserStory1";
+            this.UserStory1.Size = new System.Drawing.Size(361, 48);
+            this.UserStory1.TabIndex = 0;
+            this.UserStory1.Text = "User Story 1";
+            this.UserStory1.UseVisualStyleBackColor = true;
             // 
             // TestOutput
             // 
             this.TestOutput.Location = new System.Drawing.Point(18, 339);
             this.TestOutput.Name = "TestOutput";
-            this.TestOutput.Size = new System.Drawing.Size(402, 31);
+            this.TestOutput.Size = new System.Drawing.Size(402, 26);
             this.TestOutput.TabIndex = 4;
             // 
             // Form1
