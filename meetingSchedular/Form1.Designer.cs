@@ -28,59 +28,115 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.MeetingScheduler = new System.Windows.Forms.Button();
-            this.UpdateMeeting = new System.Windows.Forms.Button();
-            this.CancelMeeting = new System.Windows.Forms.Button();
+            this.Calendar1 = new System.Windows.Forms.MonthCalendar();
+            this.DateSelector = new System.Windows.Forms.GroupBox();
+            this.CreateDateRange = new System.Windows.Forms.Button();
+            this.NotificationBox = new System.Windows.Forms.GroupBox();
+            this.AdminBox = new System.Windows.Forms.GroupBox();
+            this.UserStory1 = new System.Windows.Forms.Button();
+            this.UserStory2 = new System.Windows.Forms.Button();
+            this.UserStory3 = new System.Windows.Forms.Button();
+            this.DateSelector.SuspendLayout();
+            this.AdminBox.SuspendLayout();
             this.SuspendLayout();
             // 
-            // MeetingScheduler
+            // Calendar1
             // 
-            this.MeetingScheduler.Location = new System.Drawing.Point(12, 12);
-            this.MeetingScheduler.Name = "MeetingScheduler";
-            this.MeetingScheduler.Size = new System.Drawing.Size(236, 85);
-            this.MeetingScheduler.TabIndex = 0;
-            this.MeetingScheduler.Text = "Book Meeting";
-            this.MeetingScheduler.UseVisualStyleBackColor = true;
-            this.MeetingScheduler.Click += new System.EventHandler(this.button1_Click);
+            this.Calendar1.Location = new System.Drawing.Point(18, 18);
+            this.Calendar1.Name = "Calendar1";
+            this.Calendar1.TabIndex = 0;
             // 
-            // UpdateMeeting
+            // DateSelector
             // 
-            this.UpdateMeeting.Location = new System.Drawing.Point(12, 103);
-            this.UpdateMeeting.Name = "UpdateMeeting";
-            this.UpdateMeeting.Size = new System.Drawing.Size(236, 90);
-            this.UpdateMeeting.TabIndex = 1;
-            this.UpdateMeeting.Text = "Re-Plan Meeting";
-            this.UpdateMeeting.UseVisualStyleBackColor = true;
+            this.DateSelector.Controls.Add(this.CreateDateRange);
+            this.DateSelector.Location = new System.Drawing.Point(432, 18);
+            this.DateSelector.Name = "DateSelector";
+            this.DateSelector.Size = new System.Drawing.Size(559, 315);
+            this.DateSelector.TabIndex = 1;
+            this.DateSelector.TabStop = false;
+            this.DateSelector.Text = "Date Selected";
             // 
-            // CancelMeeting
+            // CreateDateRange
             // 
-            this.CancelMeeting.Location = new System.Drawing.Point(12, 199);
-            this.CancelMeeting.Name = "CancelMeeting";
-            this.CancelMeeting.Size = new System.Drawing.Size(236, 90);
-            this.CancelMeeting.TabIndex = 2;
-            this.CancelMeeting.Text = "Cancel Meeting";
-            this.CancelMeeting.UseVisualStyleBackColor = true;
+            this.CreateDateRange.Location = new System.Drawing.Point(334, 264);
+            this.CreateDateRange.Name = "CreateDateRange";
+            this.CreateDateRange.Size = new System.Drawing.Size(219, 45);
+            this.CreateDateRange.TabIndex = 0;
+            this.CreateDateRange.Text = "Create Date Range";
+            this.CreateDateRange.UseVisualStyleBackColor = true;
+            // 
+            // NotificationBox
+            // 
+            this.NotificationBox.Location = new System.Drawing.Point(997, 18);
+            this.NotificationBox.Name = "NotificationBox";
+            this.NotificationBox.Size = new System.Drawing.Size(373, 315);
+            this.NotificationBox.TabIndex = 2;
+            this.NotificationBox.TabStop = false;
+            this.NotificationBox.Text = "Notifications";
+            // 
+            // AdminBox
+            // 
+            this.AdminBox.Controls.Add(this.UserStory3);
+            this.AdminBox.Controls.Add(this.UserStory2);
+            this.AdminBox.Controls.Add(this.UserStory1);
+            this.AdminBox.Location = new System.Drawing.Point(997, 584);
+            this.AdminBox.Name = "AdminBox";
+            this.AdminBox.Size = new System.Drawing.Size(373, 304);
+            this.AdminBox.TabIndex = 3;
+            this.AdminBox.TabStop = false;
+            this.AdminBox.Text = "AdminBox";
+            // 
+            // UserStory1
+            // 
+            this.UserStory1.Location = new System.Drawing.Point(6, 63);
+            this.UserStory1.Name = "UserStory1";
+            this.UserStory1.Size = new System.Drawing.Size(361, 48);
+            this.UserStory1.TabIndex = 0;
+            this.UserStory1.Text = "User Story 1";
+            this.UserStory1.UseVisualStyleBackColor = true;
+            // 
+            // UserStory2
+            // 
+            this.UserStory2.Location = new System.Drawing.Point(6, 117);
+            this.UserStory2.Name = "UserStory2";
+            this.UserStory2.Size = new System.Drawing.Size(360, 53);
+            this.UserStory2.TabIndex = 1;
+            this.UserStory2.Text = "User Story 2";
+            this.UserStory2.UseVisualStyleBackColor = true;
+            // 
+            // UserStory3
+            // 
+            this.UserStory3.Location = new System.Drawing.Point(6, 176);
+            this.UserStory3.Name = "UserStory3";
+            this.UserStory3.Size = new System.Drawing.Size(361, 53);
+            this.UserStory3.TabIndex = 2;
+            this.UserStory3.Text = "User Story 3";
+            this.UserStory3.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1139, 792);
-            this.Controls.Add(this.CancelMeeting);
-            this.Controls.Add(this.UpdateMeeting);
-            this.Controls.Add(this.MeetingScheduler);
+            this.ClientSize = new System.Drawing.Size(1382, 900);
+            this.Controls.Add(this.AdminBox);
+            this.Controls.Add(this.NotificationBox);
+            this.Controls.Add(this.DateSelector);
+            this.Controls.Add(this.Calendar1);
             this.Name = "Form1";
-            this.Text = "Meeting Scheduler";
+            this.DateSelector.ResumeLayout(false);
+            this.AdminBox.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button MeetingScheduler;
-        private System.Windows.Forms.Button UpdateMeeting;
-        private System.Windows.Forms.Button CancelMeeting;
-
+        private System.Windows.Forms.MonthCalendar Calendar1;
+        private System.Windows.Forms.GroupBox DateSelector;
+        private System.Windows.Forms.Button CreateDateRange;
+        private System.Windows.Forms.GroupBox NotificationBox;
+        private System.Windows.Forms.GroupBox AdminBox;
+        private System.Windows.Forms.Button UserStory3;
+        private System.Windows.Forms.Button UserStory2;
+        private System.Windows.Forms.Button UserStory1;
     }
 }
 
