@@ -44,30 +44,14 @@ namespace meetingSchedular
             thisAcc = accounts[index];
         }
 
-        private void listBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+        private void StrtTimeDrp_SelectedIndexChanged(object sender, EventArgs e)
         {
-<<<<<<< HEAD
-            
-            this.DateSelector.Text = this.Calendar1.SelectionRange.Start.ToShortDateString();
-=======
-
->>>>>>> eb2d859f2eb4160c6dcd77c91a1521d922af11fa
-        }
-
-
-        private void DateSelector_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void strtTimeDrp_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            /*var originalTasks = new List<string>
+            var originalTasks = new List<string>
             {
-                "9:00","10:00","12:00","13:00","14:00","15:00","16:00"
+                "9:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00"
             };
-            int selectedIndex = strtTimeDrp.SelectedIndex;
-            strtTimeDrp.DataSource = originalTasks.Where(item => item != "Awake").ToList();
+            /*int selectedIndex = StrtTimeDrp.SelectedIndex;
+            StrtTimeDrp.DataSource = originalTasks.Where(item => item != "Awake").ToList();
             MessageBox.Show(selectedIndex.ToString());*/
         }
     }
