@@ -29,48 +29,30 @@
         private void InitializeComponent()
         {
             this.Calendar1 = new System.Windows.Forms.MonthCalendar();
-            this.DateSelector = new System.Windows.Forms.GroupBox();
-            this.CreateDateRange = new System.Windows.Forms.Button();
             this.NotificationBox = new System.Windows.Forms.GroupBox();
             this.AdminBox = new System.Windows.Forms.GroupBox();
             this.UserStory3 = new System.Windows.Forms.Button();
             this.UserStory2 = new System.Windows.Forms.Button();
             this.UserStory1 = new System.Windows.Forms.Button();
-            this.TestOutput = new System.Windows.Forms.TextBox();
-            this.DateSelector.SuspendLayout();
+            this.DateChosen = new System.Windows.Forms.GroupBox();
+            this.TimesAvailable = new System.Windows.Forms.ListBox();
+            this.WelcomeLabel = new System.Windows.Forms.Label();
             this.AdminBox.SuspendLayout();
+            this.DateChosen.SuspendLayout();
             this.SuspendLayout();
             // 
             // Calendar1
             // 
-            this.Calendar1.Location = new System.Drawing.Point(18, 12);
+            this.Calendar1.Location = new System.Drawing.Point(18, 46);
             this.Calendar1.MaxSelectionCount = 1;
             this.Calendar1.Name = "Calendar1";
             this.Calendar1.TabIndex = 0;
             this.Calendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.Calendar1_DateChanged);
             // 
-            // DateSelector
-            // 
-            this.DateSelector.Controls.Add(this.CreateDateRange);
-            this.DateSelector.Location = new System.Drawing.Point(18, 397);
-            this.DateSelector.Name = "DateSelector";
-            this.DateSelector.Size = new System.Drawing.Size(402, 315);
-            this.DateSelector.TabIndex = 1;
-            this.DateSelector.TabStop = false;
-            this.DateSelector.Text = "Date Selected";
-            // 
-            // CreateDateRange
-            // 
-            this.CreateDateRange.Location = new System.Drawing.Point(177, 264);
-            this.CreateDateRange.Name = "CreateDateRange";
-            this.CreateDateRange.Size = new System.Drawing.Size(219, 45);
-            this.CreateDateRange.TabIndex = 0;
-            this.CreateDateRange.Text = "Create Date Range";
-            this.CreateDateRange.UseVisualStyleBackColor = true;
-            // 
             // NotificationBox
             // 
-            this.NotificationBox.Location = new System.Drawing.Point(432, 12);
+            this.NotificationBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NotificationBox.Location = new System.Drawing.Point(490, 12);
             this.NotificationBox.Name = "NotificationBox";
             this.NotificationBox.Size = new System.Drawing.Size(373, 315);
             this.NotificationBox.TabIndex = 2;
@@ -82,7 +64,8 @@
             this.AdminBox.Controls.Add(this.UserStory3);
             this.AdminBox.Controls.Add(this.UserStory2);
             this.AdminBox.Controls.Add(this.UserStory1);
-            this.AdminBox.Location = new System.Drawing.Point(432, 339);
+            this.AdminBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AdminBox.Location = new System.Drawing.Point(490, 373);
             this.AdminBox.Name = "AdminBox";
             this.AdminBox.Size = new System.Drawing.Size(373, 373);
             this.AdminBox.TabIndex = 3;
@@ -116,24 +99,48 @@
             this.UserStory1.Text = "User Story 1";
             this.UserStory1.UseVisualStyleBackColor = true;
             // 
-            // TestOutput
+            // DateChosen
             // 
-            this.TestOutput.Location = new System.Drawing.Point(18, 339);
-            this.TestOutput.Name = "TestOutput";
-            this.TestOutput.Size = new System.Drawing.Size(402, 26);
-            this.TestOutput.TabIndex = 4;
+            this.DateChosen.Controls.Add(this.TimesAvailable);
+            this.DateChosen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DateChosen.Location = new System.Drawing.Point(12, 373);
+            this.DateChosen.Name = "DateChosen";
+            this.DateChosen.Size = new System.Drawing.Size(402, 373);
+            this.DateChosen.TabIndex = 3;
+            this.DateChosen.TabStop = false;
+            this.DateChosen.Text = "DateChosen";
+            // 
+            // TimesAvailable
+            // 
+            this.TimesAvailable.FormattingEnabled = true;
+            this.TimesAvailable.ItemHeight = 31;
+            this.TimesAvailable.Location = new System.Drawing.Point(3, 34);
+            this.TimesAvailable.Name = "TimesAvailable";
+            this.TimesAvailable.Size = new System.Drawing.Size(393, 314);
+            this.TimesAvailable.TabIndex = 0;
+            this.TimesAvailable.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged_1);
+            // 
+            // WelcomeLabel
+            // 
+            this.WelcomeLabel.AutoSize = true;
+            this.WelcomeLabel.Location = new System.Drawing.Point(12, 9);
+            this.WelcomeLabel.Name = "WelcomeLabel";
+            this.WelcomeLabel.Size = new System.Drawing.Size(70, 25);
+            this.WelcomeLabel.TabIndex = 4;
+            this.WelcomeLabel.Text = "label1";
             // 
             // Form1
             // 
-            this.ClientSize = new System.Drawing.Size(823, 724);
-            this.Controls.Add(this.TestOutput);
+            this.ClientSize = new System.Drawing.Size(875, 758);
+            this.Controls.Add(this.WelcomeLabel);
+            this.Controls.Add(this.DateChosen);
             this.Controls.Add(this.AdminBox);
             this.Controls.Add(this.NotificationBox);
-            this.Controls.Add(this.DateSelector);
             this.Controls.Add(this.Calendar1);
             this.Name = "Form1";
-            this.DateSelector.ResumeLayout(false);
+            this.Text = "Meeting Scheduler";
             this.AdminBox.ResumeLayout(false);
+            this.DateChosen.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -142,14 +149,14 @@
         #endregion
 
         private System.Windows.Forms.MonthCalendar Calendar1;
-        private System.Windows.Forms.GroupBox DateSelector;
-        private System.Windows.Forms.Button CreateDateRange;
         private System.Windows.Forms.GroupBox NotificationBox;
         private System.Windows.Forms.GroupBox AdminBox;
         private System.Windows.Forms.Button UserStory3;
         private System.Windows.Forms.Button UserStory2;
         private System.Windows.Forms.Button UserStory1;
-        private System.Windows.Forms.TextBox TestOutput;
+        private System.Windows.Forms.GroupBox DateChosen;
+        private System.Windows.Forms.ListBox TimesAvailable;
+        private System.Windows.Forms.Label WelcomeLabel;
     }
 }
 
